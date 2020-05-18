@@ -1,0 +1,19 @@
+.root {
+
+
+  
+    padding-top: 60px
+  }
+  
+  .title {
+    margin:0 auto 40px;
+    width:170px;
+    height:70px;
+
+user-select: none;
+
+    color: transparent;
+    background-image: url('./images/title.svg');
+    background-size: contain;
+    
+  }

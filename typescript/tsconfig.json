@@ -1,0 +1,26 @@
+// tsconfig.json используется, если компилятору не передаются названия файлов
+// запустить: Ctrl + Shift + B -> tsc: build -tsconfig.json
+{
+    // сгенерировать все файлы js при каждом сохранении файлов ts
+    "compileOnSave": true,
+    // параметры компиляции
+    "compilerOptions": {
+        "target": "es6",
+        "module": "system",
+        "removeComments": false,
+        "outDir": "js",
+        "sourceMap": true,
+        "outFile": "main.js"
+    },
+    // файлы входящии в проект 
+    "files":[
+        "ts/basis.ts",
+        "ts/oop.ts",
+        "ts/moduleNamespace.ts",
+        "ts/Shapes.ts"
+    ],
+    // файлы, изключенные из проекта 
+    "exclude":[
+        "node_modules"
+    ]
+}

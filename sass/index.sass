@@ -1,0 +1,92 @@
+// Переменные
+$font-stack: Helvetica, sans-serif
+$primary-color: #333
+$bg: url(img/bg.png) no-repeat
+$border: 1px solid red
+
+body 
+  font: 100% $font-stack
+  color: $primary-color
+
+// Вложенности
+nav
+  ul
+    margin: 0
+    list-style: none
+
+  li
+    display: inline-block
+
+  a
+    display: block
+    text-decoration: none
+
+// Импорт
+// _reset.sass
+html,
+body,
+ul,
+ol
+  margin:  0
+  padding: 0
+
+// base.sass
+@import reset
+
+body
+  font: 100% Helvetica, sans-serif
+  background-color: #efefef
+
+// Миксины
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+
+.box
+  +border-radius(10px)
+
+// Расширение/Наследование
+// не попадет в CSS, т.к. %equal-heights не расширялся
+%equal-heights
+  display: flex
+  flex-wrap: wrap
+
+// попадет в CSS - %message-shared расширен
+%message-shared
+  border: 1px solid #ccc
+  padding: 10px
+  color: #333
+
+.block
+  display: block
+
+.message
+  @extend %message-shared
+  @extend .block
+
+.success
+  @extend %message-shared
+  border-color: green
+
+.error
+  @extend %message-shared
+  border-color: red
+
+.warning
+  @extend %message-shared
+  border-color: yellow
+
+// Математические операторы
+.container
+  width: 100%
+
+article[role="main"]
+  float: left
+  width: 600px / 960px * 100%
+
+aside[role="complementary"]
+  float: right
+  width: 300px / 960px * 100%
+  

@@ -1,0 +1,54 @@
+{
+  "name": "bootcamp",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Microsoft/frontend-bootcamp"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start:client": "webpack-dev-server --mode development --progress --open",
+    "test": "jest --watch",
+    "build": "rimraf docs && webpack --progress --mode production",
+    "start:server": "nodemon -w server server/index.js",
+    "start": "run-p start:server start:client",
+    "deploy-ghpages": "git push origin :gh-pages && git subtree push --prefix docs origin gh-pages"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/enzyme": "^3.9.0",
+    "@types/jest": "^23.3.13",
+    "@types/react": "^16.7.20",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-redux": "^7.0.0",
+    "@types/redux": "^3.6.0",
+    "@types/uuid": "^3.4.4",
+    "style-loader": "^0.23.1",
+    "ts-jest": "^24.0.0",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.13.0",
+    "typescript": "^3.3.3",
+    "uuid": "^3.3.2"
+  },
+  "dependencies": {
+    "@uifabric/fluent-theme": "^0.14.1",
+    "@uifabric/theme-samples": "^0.1.4",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "express": "^4.16.4",
+    "highlight.js": "^9.14.2",
+    "immer": "^1.12.1",
+    "marked": "^0.6.1",
+    "office-ui-fabric-react": "^6.144.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-starter-kit": "^0.4.3",
+    "redux-thunk": "^2.3.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+	"editor.formatOnSave": false, // false, чтобы конфигурация редактора не конфликтовала с ESLint и Prettier
+	"cSpell.words": [
+		"Adeel",
+		"Warrion",
+		"padawan"
+	], // устанавливает проверку при каждом сохранении файла
+}

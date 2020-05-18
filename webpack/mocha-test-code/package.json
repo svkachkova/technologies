@@ -1,0 +1,20 @@
+{
+	"name": "webpack-mocha-tutorial",
+	"version": "1.0.0",
+	"author": "&y Haskell",
+	"license": "MIT",
+	"scripts": {
+		"build": "webpack",
+		"test": "TESTBUILD=true webpack && mocha test-dist/main.js --require source-map-support/register && rm -rf test-dist"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-loader": "7.1.5",
+		"babel-preset-env": "^1.7.0",
+		"chai": "^4.2.0",
+		"mocha": "^5.2.0",
+		"source-map-support": "^0.5.9",
+		"webpack": "^4.28.2",
+		"webpack-cli": "^3.1.2"
+	}
+}

@@ -1,0 +1,2 @@
+This is an error
+./descriptors.sh: line 18: 3: Bad file descriptor

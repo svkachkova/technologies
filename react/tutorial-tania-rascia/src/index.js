@@ -1,0 +1,9 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+
+// пример с API и fetch
+// import App from './Api';
+
+ReactDOM.render(<App />, document.getElementById('root'));

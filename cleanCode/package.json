@@ -1,0 +1,27 @@
+{
+	"name": "clean",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "eslint --debug src/",
+		"lint:write": "eslint --debug src/ --fix",
+		"prettier": "prettier --write src/**/*.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"babel-eslint": "^10.0.2",
+		"eslint": "^6.0.1",
+		"eslint-config-airbnb": "^17.0.0",
+		"eslint-plugin-babel": "^5.3.0",
+		"eslint-plugin-import": "^2.18.0",
+		"eslint-plugin-jest": "^22.7.2",
+		"eslint-plugin-prettier": "^3.1.0",
+		"prettier": "^1.18.2",
+		"stylelint-config-airbnb": "0.0.0"
+	},
+	"extends": "/absolute/path/to/stylelint-config-standard"
+}
