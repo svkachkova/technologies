@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in form</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <!-- add the logo and name of your company or organization -->
+
+    <form action="#" method="post">
+
+        <h1>Sign in</h1>
+
+        <section>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="username" required autofocus>
+        </section>
+ 
+        <!-- use `new-password` id and autocomplete for new users (in sign up form) -->
+        <!-- <input id="new-password" type="password" autocomplete="new-password" …> -->
+        
+        <section>
+            <label for="password">Password</label>
+            <button id="toggle-password" type="button" aria-label="Show password as plain text. Warning: this will display your password on the screen.">Show password</button>
+            <input id="password" name="password" type="password" autocomplete="current-password" minlength="8" aria-describedby="password-constraints" required>
+            <div id="password-constraints">At least eight characters, with at least one lowercase and one uppercase letter.</div>
+        </section>
+
+        <!-- add `forgot your password` link (button) -->
+
+        <button id="sign-in">Sign in</button>
+
+    </form>
+
+</body>
+</html>

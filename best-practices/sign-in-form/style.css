@@ -1,0 +1,142 @@
+:root {
+    --desktop-font-size: 16px;
+    --mobile-font-size: 22px;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 500;
+    margin: 10px 20px;
+}
+
+button {
+    display: block;
+
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+
+    color: #444;
+    background-color: #eee;
+    cursor: pointer;
+    
+    font-size: 22px;
+    font-size: var(--mobile-font-size);
+    font-weight: 500;
+}
+
+button:hover {
+    color: black;
+    background-color: #ccc;
+}
+
+button#sign-in:disabled {
+    color: black;
+    background-color: #ccc;
+    cursor: default;
+}
+
+button#toggle-password {
+    position: absolute;
+    top: -4px;
+    right: -2px;
+
+    padding: 0;
+    border: none;
+
+    background: none;
+    font-weight: 300;
+}
+
+div#password-constraints {
+    margin-block-start: 5px;
+    font-size: 16px;
+}
+  
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+  
+h1 {
+    margin-block-end: 20px;
+    padding-block-end: 5px;
+    border-block-end: 1px solid #ccc;
+
+    font-size: 28px;
+    font-weight: 600;
+}
+  
+input {
+    width: 90%;
+    width: calc(100% - 30px);
+
+    padding: 15px;
+    border: 1px solid #ccc;
+
+    font-size: 22px;
+    font-size: var(--mobile-font-size);
+}
+
+input[type=email]:not(:focus):invalid,
+input[type=password]:not(:focus):invalid {
+    color: red;
+    outline-color: red;
+}
+
+label {
+    display: block;
+    margin-block-end: 3px;
+
+    font-size: 20px;
+    font-size: var(--mobile-font-size);
+    font-weight: 500;
+}
+
+form section {
+    position: relative;
+    margin-block-end: 20px;
+}
+  
+@media (min-width: 450px) {
+
+    body {
+        margin: 20px 50px;
+    }
+
+    button {
+        font-size: 14px;
+        font-size: var(--desktop-font-size);
+    }
+
+    button#sign-in {
+        margin-block-start: 40px;
+    }
+
+    div#password-constraints {
+        font-size: 14px;
+    }
+
+    h1 {
+        margin-block-end: 80px;
+
+        font-size: 28px;
+        font-size: calc(2 * var(--desktop-font-size));
+        font-weight: 500;
+    }
+
+    input {
+        font-size: 14px;
+        font-size: var(--desktop-font-size);
+    }
+    label {
+        font-size: 14px;
+        font-size: var(--desktop-font-size);
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        margin: 50px;
+    }
+}
